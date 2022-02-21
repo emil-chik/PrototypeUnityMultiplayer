@@ -1,0 +1,2 @@
+E:\another big business\Hello\obj\Debug\PhotonUnityNetworking.csproj.AssemblyReference.cache
+E:\another big business\Hello\obj\Debug\PhotonUnityNetworking.csproj.CoreCompileInputs.cache

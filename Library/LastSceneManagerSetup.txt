@@ -1,0 +1,13 @@
+sceneSetups:
+- path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/TopDownEngine/Demos/Minimal3D/MinimalSandbox3D.unity
+  isLoaded: 1
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-GameScene.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
