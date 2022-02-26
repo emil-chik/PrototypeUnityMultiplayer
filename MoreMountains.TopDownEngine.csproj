@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{82031123-4566-899C-DEEF-332DD1C0C096}</ProjectGuid>
+    <ProjectGuid>{53CE8F9D-EC61-A600-8E1D-B1B5E3C8CEDD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>MoreMountains.TopDownEngine</AssemblyName>
@@ -840,32 +840,60 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="MoreMountains.Tools.csproj">
-      <Project>{6D5D8B9A-CEC1-C77E-C46C-A9A601848B57}</Project>
+      <Project>{3BE1C1EA-7257-7238-37BA-DDD6C9A24CC9}</Project>
       <Name>MoreMountains.Tools</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.csproj">
-      <Project>{13B304FF-BE6D-11D1-3DBF-2D44FB00368D}</Project>
+      <Project>{76D3D42A-D5C8-AED6-4CD8-80287E77C060}</Project>
       <Name>MoreMountains.Feedbacks</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.InventoryEngine.csproj">
-      <Project>{C0B8A646-7633-26D8-923F-49CAC3EF8A7D}</Project>
+      <Project>{30A1EBFC-019D-3513-19CA-883907F720DC}</Project>
       <Name>MoreMountains.InventoryEngine</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Interface.csproj">
-      <Project>{86A29756-B089-3E0D-A855-760306EE2F21}</Project>
+      <Project>{B510C471-9425-7DD7-81B5-04B289289559}</Project>
       <Name>MoreMountains.Interface</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.MMTools.csproj">
-      <Project>{09EA09FC-94F8-F1CC-9E5C-391752C5786F}</Project>
+      <Project>{CCEED8F8-5802-2883-244B-1CDDAB558059}</Project>
       <Name>MoreMountains.Feedbacks.MMTools</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{384A4C39-51CF-60B1-4044-F7AB2D7E4578}</Project>
+      <Project>{29B031C0-5CC4-45FC-22EC-D4C2A0E8E30E}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonScript.csproj">
-      <Project>{6247F9B7-7EC0-E2EC-4D41-3DC361EEBC58}</Project>
+      <Project>{9C211780-5EC2-BC69-98BD-7BB66A763240}</Project>
       <Name>PhotonScript</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{BC40EE62-1F71-2FC1-5940-5D1D78EBB36F}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{51A89FED-0803-CF65-BAD4-B2D91CDDCDD4}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
+      <Project>{36C066E5-A0B5-5DCD-4F51-99EEDB98036F}</Project>
+      <Name>PhotonUnityNetworking.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{1A261BAC-1D98-190B-15B9-89832E6787B1}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{EF6C5907-6528-8F13-0A74-64883568148D}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{C01E01A5-68C7-E829-D0E5-4203C2856E57}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{7881F680-9074-E865-E177-E52F9CB91BB3}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -242,7 +242,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   RotationMode: 3
   CharacterRotationAuthorized: 1
   ShouldRotateToFaceMovementDirection: 1
@@ -282,7 +282,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   Movement: 0
   InputAuthorized: 1
   AnalogInput: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   RunSpeed: 8
   AutoRun: 0
   AutoRunThreshold: 0.6
@@ -342,7 +342,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   JumpProportionalToPress: 1
   MinimumPressTime: 0.4
   JumpForce: 800
@@ -373,7 +373,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   ButtonActivatedZone: {fileID: 0}
 --- !u!114 &114393537147240656
 MonoBehaviour:
@@ -395,7 +395,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   DashMode: 1
   DashDirection: {x: 0, y: 0, z: 1}
   DashDistance: 10
@@ -455,7 +455,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
 --- !u!114 &114065509660881824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   Mode: 1
   TimeScale: 0.5
   OneTimeDuration: 1
@@ -512,7 +512,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   _view: {fileID: 5975899245467562698}
   InitialWeapon: {fileID: 0}
-  CanPickupWeapons: 0
+  CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
   WeaponAttachment: {fileID: 4564073364419608}
   ProjectileSpawn: {fileID: 0}
@@ -588,7 +588,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   PlayerID: Player1
   MainInventoryName: SuitMainInventory
   WeaponInventoryName: SuitWeaponInventory
@@ -597,7 +597,8 @@ MonoBehaviour:
   WeaponRotationMode: 0
   AutoPickItems: []
   AutoEquipWeaponOnStart: {fileID: 0}
-  CharacterHandleWeapon: {fileID: 0}
+  CharacterHandleWeapon: {fileID: 114510539804127886}
+  view: {fileID: 0}
 --- !u!114 &5975899245467562698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,7 +658,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  _view: {fileID: 0}
+  _view: {fileID: 5975899245467562698}
   ForcedCrouch: 0
   CrawlAuthorized: 1
   CrawlSpeed: 4

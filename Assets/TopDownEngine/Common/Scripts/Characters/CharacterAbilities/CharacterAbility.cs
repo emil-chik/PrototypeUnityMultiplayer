@@ -123,7 +123,6 @@ namespace MoreMountains.TopDownEngine
         /// </summary>
 		protected virtual void PreInitialization()
         {
-			Debug.Log("Character Ability PreInitialization = " + this.name);
 			_character = this.gameObject.GetComponentInParent<Character>();
             BindAnimator();
         }

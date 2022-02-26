@@ -3,6 +3,7 @@ using System.Collections;
 using MoreMountains.Tools;
 using MoreMountains.InventoryEngine;
 using System.Collections.Generic;
+using Photon.Pun;
 
 namespace MoreMountains.TopDownEngine
 {
@@ -69,12 +70,20 @@ namespace MoreMountains.TopDownEngine
         protected const string _emptySlotWeaponName = "_EmptySlotWeaponName";
         protected const string _initialSlotWeaponName = "_InitialSlotWeaponName";
 
+        public PhotonView view;
         /// <summary>
         /// On init we setup our ability
         /// </summary>
 		protected override void Initialization () 
 		{
-			base.Initialization();
+            view = GetComponent<PhotonView>();
+            if (!view.AmOwner)
+            {
+                PlayerID = "Player2";
+                MainInventoryName = "SuitMainInventory2";
+                WeaponInventoryName = "SuitWeaponInventory2";
+            }
+            base.Initialization();
 			Setup ();
 		}
 

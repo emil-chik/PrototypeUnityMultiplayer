@@ -122,7 +122,7 @@ namespace MoreMountains.TopDownEngine
         /// </summary>
         protected override void PreInitialization()
         {
-            Debug.Log("PreInitialization = "+this.name);
+            //Debug.Log("PreInitialization = "+this.name);
             base.PreInitialization();
             // filler if the WeaponAttachment has not been set
             if (WeaponAttachment == null)
@@ -134,7 +134,7 @@ namespace MoreMountains.TopDownEngine
         // Initialization
         protected override void Initialization()
         {
-            Debug.Log("Initialization = " + this.name);
+            //Debug.Log("Initialization = " + this.name);
             base.Initialization();
             view = GetComponent<PhotonView>();
             Setup();
@@ -145,7 +145,7 @@ namespace MoreMountains.TopDownEngine
         /// </summary>
         public virtual void Setup()
         {
-            Debug.Log("Setup = " + this.name);
+           //Debug.Log("Setup = " + this.name);
             _character = this.gameObject.GetComponentInChildren<Character>();
             _characterGridMovement = _character?.FindAbility<CharacterGridMovement>();
             _weaponModels = new List<WeaponModel>();
@@ -418,10 +418,10 @@ namespace MoreMountains.TopDownEngine
 
         protected virtual void InstantiateWeapon(Weapon newWeapon, string weaponID, bool combo = false)
         {
-            Debug.Log(this.name);
+            //Debug.Log("ATTACH TO THIS CHARACTER"+this.name);
             if (!combo)
             {
-                CurrentWeapon = (Weapon)Instantiate(newWeapon, this.WeaponAttachment.transform.position + newWeapon.WeaponAttachmentOffset, WeaponAttachment.transform.rotation);
+                CurrentWeapon = PhotonNetwork.Instantiate(newWeapon.name, this.WeaponAttachment.transform.position + newWeapon.WeaponAttachmentOffset, WeaponAttachment.transform.rotation).GetComponent<Weapon>();
             }
             CurrentWeapon.transform.parent = WeaponAttachment.transform;
             CurrentWeapon.transform.localPosition = newWeapon.WeaponAttachmentOffset;

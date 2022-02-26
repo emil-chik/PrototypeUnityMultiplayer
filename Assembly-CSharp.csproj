@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B3CAF817-2D14-2D1F-D5BD-22C296088847}</ProjectGuid>
+    <ProjectGuid>{3AF5D062-95B4-A902-459F-EBFA2830D908}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,6 +53,9 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\TopDownEngine\ThirdParty\Tilemap\2dExtras\Tiles\Terrain Tile\Scripts\TerrainTile.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
@@ -79,7 +82,6 @@
     <Compile Include="Assets\TopDownEngine\ThirdParty\MoreMountains\MMFeedbacks\Demos\MMFeedbacksDemo\Scripts\DemoGhost.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-    <Compile Include="Assets\Scripts\OwnershipTransferGameObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TopDownEngine\ThirdParty\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -768,143 +770,147 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{131E8239-24D0-C351-843F-471CB701FCA4}</Project>
+      <Project>{51A89FED-0803-CF65-BAD4-B2D91CDDCDD4}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.TopDownEngine.Cinemachine.csproj">
-      <Project>{11DB4280-D78B-BF4A-CE2A-91BF5BE7096D}</Project>
+      <Project>{01BCCB65-D89D-558C-34F6-5E6BA32A2FEE}</Project>
       <Name>MoreMountains.TopDownEngine.Cinemachine</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.InventoryEngine.Editor.csproj">
-      <Project>{7732EC65-5591-94EA-228C-0A5FEB6BA702}</Project>
+      <Project>{113C9635-33F4-E50B-7F3A-FCD4DBE30CAF}</Project>
       <Name>MoreMountains.InventoryEngine.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.Editor.csproj">
-      <Project>{79503FB3-9D59-E4F1-B48E-21F2DB54130F}</Project>
+      <Project>{DFDEA5D3-44E1-2FD1-7EAB-09D6F4B5E7EE}</Project>
       <Name>MoreMountains.Tools.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.TextMeshPro.csproj">
-      <Project>{DF1870CF-F051-5311-7368-1D935B82BEB6}</Project>
+      <Project>{5B956A41-23F7-48C5-1977-EEFCA8A8A2CA}</Project>
       <Name>MoreMountains.Feedbacks.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.InventoryEngine.Demos.csproj">
-      <Project>{2E0B3525-A604-37A8-2189-9B4C5D07D0FC}</Project>
+      <Project>{1D7447B9-AB25-7BFA-8823-840E002A34F9}</Project>
       <Name>MoreMountains.InventoryEngine.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Interface.Editor.csproj">
-      <Project>{59F2CA0B-1848-738A-BC60-1ACF91E5F749}</Project>
+      <Project>{EDD67E94-307A-02E0-EDCC-43C51E69D28D}</Project>
       <Name>MoreMountains.Interface.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.csproj">
-      <Project>{13B304FF-BE6D-11D1-3DBF-2D44FB00368D}</Project>
+      <Project>{76D3D42A-D5C8-AED6-4CD8-80287E77C060}</Project>
       <Name>MoreMountains.Feedbacks</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.TopDownEngine.PostProcessing.csproj">
-      <Project>{764001B7-5AB5-F018-CE48-BEA224E3E061}</Project>
+      <Project>{9B54201B-9D6B-9B2A-9359-E6A8B0DAA2BC}</Project>
       <Name>MoreMountains.TopDownEngine.PostProcessing</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{DC995DBC-6DC3-7AEC-95B7-8D52799D1C43}</Project>
+      <Project>{1A261BAC-1D98-190B-15B9-89832E6787B1}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{E109F826-E82E-B3C4-6BE5-D57D2CF5FDDB}</Project>
+      <Project>{7881F680-9074-E865-E177-E52F9CB91BB3}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{C3982656-C8A9-60E3-7AE8-8B1EBBA41B19}</Project>
+      <Project>{04C4C92D-E19F-57BB-3C78-0B748E354E88}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{1C8DF810-799B-4A8F-9B59-724241D72AB4}</Project>
+      <Project>{BC40EE62-1F71-2FC1-5940-5D1D78EBB36F}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.PostProcessing.csproj">
-      <Project>{846AF1E8-5C84-3D45-53DE-C7210E745162}</Project>
+      <Project>{6F249804-5482-A3B9-0E97-34CB7C87515C}</Project>
       <Name>MoreMountains.Feedbacks.PostProcessing</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.Editor.csproj">
-      <Project>{B922A1C1-C721-204F-6FFA-F38E674CC7CA}</Project>
+      <Project>{0973BF98-0527-C6C6-9E17-2824E64FC815}</Project>
       <Name>MoreMountains.Feedbacks.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{49D7A645-3288-672E-CF0A-95BD0CEB5E58}</Project>
+      <Project>{EF6C5907-6528-8F13-0A74-64883568148D}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{384A4C39-51CF-60B1-4044-F7AB2D7E4578}</Project>
+      <Project>{29B031C0-5CC4-45FC-22EC-D4C2A0E8E30E}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.TextMeshPro.csproj">
-      <Project>{2B6A0B15-A70C-043A-FBB9-38EFE15218FE}</Project>
+      <Project>{42A87731-433E-8120-247A-D3AC83CAED4D}</Project>
       <Name>MoreMountains.Tools.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Interface.csproj">
-      <Project>{86A29756-B089-3E0D-A855-760306EE2F21}</Project>
+      <Project>{B510C471-9425-7DD7-81B5-04B289289559}</Project>
       <Name>MoreMountains.Interface</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.Feedbacks.csproj">
-      <Project>{96BDF073-42D1-5BE5-B5B7-084CFB87A8D3}</Project>
+      <Project>{EA9F0ADD-9CED-9E75-B178-64F9E2C179E2}</Project>
       <Name>MoreMountains.Tools.Feedbacks</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.Feedbacks.Editor.csproj">
-      <Project>{8A53E256-DDB2-D526-9F77-49CF0A5E5A16}</Project>
+      <Project>{1DC4500A-3A6F-D0B2-B68B-3436DE9FBF12}</Project>
       <Name>MoreMountains.Tools.Feedbacks.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{04C169F9-09A7-192D-BAEE-72798650E555}</Project>
+      <Project>{36C066E5-A0B5-5DCD-4F51-99EEDB98036F}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{775AE663-2713-1422-5575-88F7D9321625}</Project>
+      <Project>{D1D5E2E3-25DF-826E-9DF7-43C1593E739B}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{8663AA6A-466E-76F6-21EF-07DADD591EFD}</Project>
+      <Project>{5D688980-18A8-E0DF-0B11-A10103FB6E6C}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.InventoryEngine.csproj">
-      <Project>{C0B8A646-7633-26D8-923F-49CAC3EF8A7D}</Project>
+      <Project>{30A1EBFC-019D-3513-19CA-883907F720DC}</Project>
       <Name>MoreMountains.InventoryEngine</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.Cinemachine.csproj">
-      <Project>{7B6917B6-14C7-69E4-8937-6E05CDAA8B28}</Project>
+      <Project>{1A89F784-145F-D07E-1180-E7B69DABDE39}</Project>
       <Name>MoreMountains.Tools.Cinemachine</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.TopDownEngine.Editor.csproj">
-      <Project>{301F33FA-730E-ABE3-7862-01FFC6B68020}</Project>
+      <Project>{903CB930-775E-FF9F-A4B7-2418DCCDCE41}</Project>
       <Name>MoreMountains.TopDownEngine.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.MMTools.csproj">
-      <Project>{09EA09FC-94F8-F1CC-9E5C-391752C5786F}</Project>
+      <Project>{CCEED8F8-5802-2883-244B-1CDDAB558059}</Project>
       <Name>MoreMountains.Feedbacks.MMTools</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.TopDownEngine.csproj">
-      <Project>{82031123-4566-899C-DEEF-332DD1C0C096}</Project>
+      <Project>{53CE8F9D-EC61-A600-8E1D-B1B5E3C8CEDD}</Project>
       <Name>MoreMountains.TopDownEngine</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.TopDownEngine.Demos.csproj">
-      <Project>{7814185E-1207-3F7E-292C-649DA1512C6E}</Project>
+      <Project>{0DFD793E-CE56-008D-45CF-DBD285915658}</Project>
       <Name>MoreMountains.TopDownEngine.Demos</Name>
     </ProjectReference>
+    <ProjectReference Include="PhotonScript.csproj">
+      <Project>{9C211780-5EC2-BC69-98BD-7BB66A763240}</Project>
+      <Name>PhotonScript</Name>
+    </ProjectReference>
     <ProjectReference Include="MoreMountains.TopDownEngine.Cinemachine.Editor.csproj">
-      <Project>{B7DA4D0C-7500-E600-8709-5CFE7FAE9C0B}</Project>
+      <Project>{16FFC21E-922A-E4AF-57D2-66C47B11E541}</Project>
       <Name>MoreMountains.TopDownEngine.Cinemachine.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.Cinemachine.csproj">
-      <Project>{C56A090E-2218-D6EF-0106-69E30187515F}</Project>
+      <Project>{CDE2DE0E-8AB5-9885-E554-6F8A7E77122B}</Project>
       <Name>MoreMountains.Feedbacks.Cinemachine</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{45BCB766-33E7-CE40-5C41-23E48755C233}</Project>
+      <Project>{EDEA846B-D554-3DFF-2D4C-EF2C4F2AD692}</Project>
       <Name>PunDemos.DemoSlotcarEditor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.csproj">
-      <Project>{6D5D8B9A-CEC1-C77E-C46C-A9A601848B57}</Project>
+      <Project>{3BE1C1EA-7257-7238-37BA-DDD6C9A24CC9}</Project>
       <Name>MoreMountains.Tools</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{AB7400DD-5CF4-2F32-B3E5-9B558ECFC3AF}</Project>
+      <Project>{C01E01A5-68C7-E829-D0E5-4203C2856E57}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
   </ItemGroup>

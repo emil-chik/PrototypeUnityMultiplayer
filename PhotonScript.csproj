@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6247F9B7-7EC0-E2EC-4D41-3DC361EEBC58}</ProjectGuid>
+    <ProjectGuid>{9C211780-5EC2-BC69-98BD-7BB66A763240}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PhotonScript</AssemblyName>
@@ -53,8 +53,11 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\OwnershipTransferGameObject.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\TouchObject.cs" />
+    <Compile Include="Assets\Scripts\OwnershipTransferGameObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\PhotonScript.asmdef" />
@@ -690,11 +693,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{384A4C39-51CF-60B1-4044-F7AB2D7E4578}</Project>
+      <Project>{29B031C0-5CC4-45FC-22EC-D4C2A0E8E30E}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{1C8DF810-799B-4A8F-9B59-724241D72AB4}</Project>
+      <Project>{BC40EE62-1F71-2FC1-5940-5D1D78EBB36F}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
   </ItemGroup>

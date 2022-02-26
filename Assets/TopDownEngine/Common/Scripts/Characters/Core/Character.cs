@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System;
 using Random = UnityEngine.Random;
 using Photon.Pun;
+using Photon.Pun.UtilityScripts;
 
 namespace MoreMountains.TopDownEngine
 {
@@ -144,9 +145,27 @@ namespace MoreMountains.TopDownEngine
         /// Initializes this instance of the character
         /// </summary>
         protected virtual void Awake()
-		{		
-			Initialization();
-            view = GetComponent<PhotonView>();
+		{
+            //if (this.name == "MinimalCharacter(Clone)")
+            //{
+            //    this.PlayerID = "Player2";
+            //}
+            //view = GetComponent<PhotonView>();
+            //if (!view.AmOwner)
+            //{
+            //    CharacterType = CharacterTypes.AI;
+            //}
+
+            //// we don't want the master client to apply input to remote ships while the remote player is inactive
+            //if (this.view.CreatorActorNr != PhotonNetwork.LocalPlayer.ActorNumber)
+            //{
+            //    PlayerID = "Player2";
+            //}
+            //Debug.Log("When Awake GET PLAYER NUMBER" + view.Owner.GetPlayerNumber());
+            //Debug.Log("When Awake AM OWNER" + view.AmOwner);
+            //Debug.Log("When Awake AM OWNER" + view.AmOwner);
+            Initialization();	
+            
 		}
 
         /// <summary>
@@ -528,11 +547,11 @@ namespace MoreMountains.TopDownEngine
                 gameObject.SetActive(true);
                 //Debug.LogError("Spawn : your Character's gameobject is inactive");
             }
-
-            if (view.ViewID == 2001) 
-            {
-                PlayerID = "Player2";
-            }
+            //Debug.Log("Hello "+this.view.AmController+" "+view.name);
+            //if (this.view.name) 
+            //{
+            //    PlayerID = "Player2";
+            //}
 
             // we raise it from the dead (if it was dead)
             ConditionState.ChangeState(CharacterStates.CharacterConditions.Normal);

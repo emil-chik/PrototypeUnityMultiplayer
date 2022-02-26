@@ -2040,18 +2040,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd735c9a220c5e94195000fa0c1a1719, type: 3}
---- !u!114 &235953748 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3716194032394545472, guid: dd735c9a220c5e94195000fa0c1a1719,
-    type: 3}
-  m_PrefabInstance: {fileID: 235953747}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255778446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &253826985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,7 +4988,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 3.4244246e+12, z: 4.5905e-41, w: 2.1430963e-37}
+  m_BoundingSphereOverride: {x: 1e-45, y: 1.28e-43, z: 0, w: 1e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -6779,7 +6767,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ObservedComponents.Array.data[0]
       value: 
-      objectReference: {fileID: 1783094174}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd735c9a220c5e94195000fa0c1a1719, type: 3}
 --- !u!4 &665004035 stripped
@@ -8207,7 +8195,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 9.23e-43, y: -126.66974, z: 9.23e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -9482,7 +9470,7 @@ MonoBehaviour:
   OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 900116320}
+  - {fileID: 0}
   - {fileID: 890499727}
   sceneViewId: 35
   InstantiationId: 0
@@ -9581,18 +9569,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd735c9a220c5e94195000fa0c1a1719, type: 3}
---- !u!114 &900116320 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3716194032394545472, guid: dd735c9a220c5e94195000fa0c1a1719,
-    type: 3}
-  m_PrefabInstance: {fileID: 900116319}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890499722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &904738124
 GameObject:
   m_ObjectHideFlags: 0
@@ -11070,7 +11046,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ObservedComponents.Array.data[0]
       value: 
-      objectReference: {fileID: 1083859029}
+      objectReference: {fileID: 0}
     - target: {fileID: 7457565389010808932, guid: 2839df927b4d78a47aacaff394f1dbb1,
         type: 3}
       propertyPath: m_RootOrder
@@ -11133,18 +11109,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2839df927b4d78a47aacaff394f1dbb1, type: 3}
---- !u!114 &1083859029 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 759224088174834528, guid: 2839df927b4d78a47aacaff394f1dbb1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1083859028}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921069826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1097902003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4377839293563584, guid: 27843e4f682c6874fbd6d8543c7aa9c2,
@@ -12162,7 +12126,7 @@ MonoBehaviour:
   OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 235953748}
+  - {fileID: 0}
   - {fileID: 1255778451}
   sceneViewId: 34
   InstantiationId: 0
@@ -13000,7 +12964,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.8284e-41, y: 6e-44, z: NaN, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -14105,7 +14069,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ObservedComponents.Array.data[0]
       value: 
-      objectReference: {fileID: 1465071079}
+      objectReference: {fileID: 0}
     - target: {fileID: 3938910063450174335, guid: dd735c9a220c5e94195000fa0c1a1719,
         type: 3}
       propertyPath: ObservedComponents.Array.data[1]
@@ -14113,18 +14077,6 @@ PrefabInstance:
       objectReference: {fileID: 2028097377}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd735c9a220c5e94195000fa0c1a1719, type: 3}
---- !u!114 &1465071079 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3716194032394545472, guid: dd735c9a220c5e94195000fa0c1a1719,
-    type: 3}
-  m_PrefabInstance: {fileID: 1465071078}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028097372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1505967981 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 407832, guid: fada082eba94c4a43b6723e828602a12,
@@ -14937,18 +14889,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1692533373}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1693171423 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 759224088174834528, guid: 2839df927b4d78a47aacaff394f1dbb1,
-    type: 3}
-  m_PrefabInstance: {fileID: 7457565389041733853}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1698802910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4714314603693338, guid: 2c5a8308e5e020d498c9e83522d631ff,
@@ -15404,18 +15344,6 @@ Transform:
   m_Father: {fileID: 1882676084}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -20, y: 0, z: 0}
---- !u!114 &1783094174 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3716194032394545472, guid: dd735c9a220c5e94195000fa0c1a1719,
-    type: 3}
-  m_PrefabInstance: {fileID: 657524080}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1805716741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 487350, guid: 13f7a2e2a04268d4f8cee777011fef35,
@@ -16634,7 +16562,7 @@ MonoBehaviour:
   OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 1465071079}
+  - {fileID: 0}
   - {fileID: 2028097377}
   sceneViewId: 32
   InstantiationId: 0
@@ -25677,7 +25605,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ObservedComponents.Array.data[0]
       value: 
-      objectReference: {fileID: 1693171423}
+      objectReference: {fileID: 0}
     - target: {fileID: 7457565389010808932, guid: 2839df927b4d78a47aacaff394f1dbb1,
         type: 3}
       propertyPath: m_RootOrder

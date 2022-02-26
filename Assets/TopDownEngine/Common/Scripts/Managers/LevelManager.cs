@@ -180,7 +180,7 @@ namespace MoreMountains.TopDownEngine
             // we check if there's a stored character in the game manager we should instantiate
             if (GameManager.Instance.StoredCharacter != null)
             {
-                Character newPlayer = (Character)Instantiate(GameManager.Instance.StoredCharacter, _initialSpawnPointPosition, Quaternion.identity);
+                Character newPlayer = PhotonNetwork.Instantiate(GameManager.Instance.StoredCharacter.name, _initialSpawnPointPosition, Quaternion.identity).GetComponent<Character>();
                 newPlayer.name = GameManager.Instance.StoredCharacter.name;
                 Players.Add(newPlayer);
                 return;
